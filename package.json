@@ -1,0 +1,35 @@
+{
+  "name": "she",
+  "version": "0.0.1",
+  "description": "just so so",
+  "main": "./app/bin/www",
+  "scripts": {
+    "test": "export NODE_ENV=test PORT=3300 && mocha 'test/**/*.test.js' --exit",
+    "start": "pm2 start ./app/bin/www --name she-API",
+    "dev": "export NODE_ENV=dev PORT=3300 && supervisor ./app/bin/www",
+    "cov": "export NODE_ENV=test PORT=3300 && nyc mocha 'test/**/*.test.js' --exit"
+  },
+  "author": "onlyling",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "connect-session-sequelize": "^5.1.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "express-async-errors": "^2.1.0",
+    "express-session": "^1.15.6",
+    "helmet": "^3.9.0",
+    "highlight.js": "^9.12.0",
+    "log4js": "^2.4.1",
+    "marked": "^0.3.12",
+    "mysql2": "^1.5.1",
+    "nunjucks": "^3.0.1",
+    "sequelize": "^4.28.5"
+  },
+  "devDependencies": {
+    "mocha": "^4.1.0",
+    "nyc": "^11.4.1",
+    "power-assert": "^1.4.4",
+    "supertest": "^3.0.0"
+  }
+}

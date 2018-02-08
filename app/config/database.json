@@ -1,0 +1,36 @@
+{
+    "dev": {
+        "database": "she_2",
+        "username": "root",
+        "password": null,
+        "option": {
+            "host": "localhost",
+            "dialect": "mysql",
+            "port": 3306,
+            "timezone": "+08:00"
+        }
+    },
+    "test": {
+        "database": "she_2",
+        "username": "root",
+        "password": null,
+        "option": {
+            "host": "localhost",
+            "dialect": "mysql",
+            "port": 3306,
+            "timezone": "+08:00",
+            "logging": false
+        }
+    },
+    "production": {
+        "database": "",
+        "username": "root",
+        "password": "",
+        "option": {
+            "host": "localhost",
+            "dialect": "mysql",
+            "port": 3306,
+            "timezone": "+08:00"
+        }
+    }
+}
